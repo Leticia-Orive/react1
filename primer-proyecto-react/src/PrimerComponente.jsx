@@ -1,4 +1,4 @@
-
+import './PrimerComponente.css'
 
 //creamos un componente de clase y lo exportamos esto ya no se lleva porque ahora se usan los hooks
 /*
