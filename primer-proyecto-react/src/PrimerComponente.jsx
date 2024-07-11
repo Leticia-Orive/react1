@@ -1,4 +1,25 @@
 import '../src/styles/PrimerComponente.css'
+import PropTypes from 'prop-types'
+//Exportamos un props=propiedades que se le pasan a un componente para que este pueda renderizarlas
+//Tambien se puede poner asi export const PrimerComponente = (props) => { titulo, subtitulo= 'seccion de Props} pero da prioridad a lo que hay en el main.jsx y se quitaria 
+// esto PrimerComponente.defaultProps 
+export const PrimerComponente = ({titulo, subtitulo}) => {     
+    
+    return (
+        <>
+            <h1>{titulo}</h1>
+            <h2>{subtitulo }</h2>
+        </>
+    )
+}
+PrimerComponente.PropTypes = {
+    titulo: PropTypes.string.isRequired,
+    subtitulo: PropTypes.string.isRequired
+}
+PrimerComponente.defaultProps = {   
+    titulo: 'Curso de React desde 0',
+    subtitulo: 'Sección de props'
+}
 
 //creamos un componente de clase y lo exportamos esto ya no se lleva porque ahora se usan los hooks
 /*
@@ -20,7 +41,7 @@ export default PrimerComponente;*/
 
     export default PrimerComponente;*/
 //Creamos variables
-const string = 'Esto es un texto'
+/*const string = 'Esto es un texto'
 const number = 123456
 const array = ['Curso de React', 'Youtube', 4, 100000]
 const boolean = true
@@ -45,4 +66,4 @@ export const PrimerComponente = () => {
     
    
   )
-}
+}*/
