@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 //Exportamos un props=propiedades que se le pasan a un componente para que este pueda renderizarlas
 //Tambien se puede poner asi export const PrimerComponente = (props) => { titulo, subtitulo= 'seccion de Props} pero da prioridad a lo que hay en el main.jsx y se quitaria 
 // esto PrimerComponente.defaultProps 
+// eslint-disable-next-line react/prop-types
 export const PrimerComponente = ({titulo, subtitulo}) => {     
     
     return (
